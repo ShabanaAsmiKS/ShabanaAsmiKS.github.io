@@ -1,0 +1,22 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+.hero{
+	height: 100vh;
+	background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(pooram.jpg);
+	background-position: center;
+	background-size: cover;
+	overflow-x: hidden;
+	position: relative;
+}
+.nav-bar{
+	display: flex;
+	padding: 40px 120px;
+}
+.nav-logo h1{
+	font-color: white;
+	font-family: verdana;
+}
+	

@@ -1,0 +1,154 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+.hero{
+	height: 100vh;
+	background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(pooram.jpg);
+	background-position: center;
+	background-size: cover;
+	overflow-x: hidden;
+	position: relative;
+}
+.nav-bar{
+	display: flex;
+	padding: 40px 120px;
+}
+.nav-logo{
+	flex; 1;
+}
+.nav-logo h1{
+	color: #BC8F8F;
+	font-family: courier;
+}
+.nav-links{
+	flex: 1;
+}
+
+.nav-links ul{
+	margin-left: 40px;
+	display: inline;
+}
+.nav-links ul li{
+	list-style: none;
+	display: inline-block;
+	padding: 8px 25px;
+}
+
+.nav-links ul a{
+	color: #D2B48C;
+	text-decoration: none;
+	font-size: 13px;
+}
+
+.nav-links ul li::after{
+	content: '';
+	width: 0;
+	height: 2px;
+	background: tan;
+	display: block;
+	margin: auto;
+	transition: .5s;
+}	
+
+.nav-links ul li:hover::after{
+	width: 100%;
+}
+.btn{
+	color: #800000;
+	padding: 10px 20px;
+	border: 0;
+	background: tan;
+	font-weight: bold;
+	cursor: pointer;
+}
+.nav-links .btn{
+	float: right;
+}
+.quote{
+	margin: 80px 130px;
+	color: goldenrod;
+	display: inline-block;
+	padding: 8px 25px;
+}
+.quote h1{
+	margin-bottom: 30px;
+}
+.quote h1 span{
+	color: #FFEBCD;	
+}
+
+.btn2{
+	color: #DEB887;
+	padding: 10px 20px;
+	border: 1px solid sienna;
+	background: transparent;
+	font-weight: bold;
+	cursor: pointer;
+	
+}
+.quote .btn2{
+	float: center;
+}
+
+.social-icons{
+	display: flex;
+    	justify-content: center;
+	
+}
+
+.social-icons .fa{
+	color: #FFEBCD;
+	margin: 15px 23px;
+	padding: 4px;
+	cursor: pointer;
+}
+.nav-bar .fa{
+	display: none;
+	
+	}
+@media(max-width: 700px){
+	.quote{
+		margin: 80px 40px;
+	}
+	.quote h1{
+		font-size: 50px;
+	}
+	.nav-bar{
+		padding: 5px 10px;
+	}
+	.fa-bars{
+		position: absolute;
+		right: 20px;
+		top: 10px;
+	}
+	.nav-bar .fa{
+		display: block;
+		color: #800000;
+		margin: 10px 25px;
+		font-size: 22px;
+		cursor: pointer;
+	}
+	.nav-links{
+		height: 100vh;
+		width: 200px;
+		background: #000;
+		top: 0;
+		right: -200px;
+		position: absolute;
+		text-align: left;
+		z-index: 2;
+		transition: 0.5s;
+	}
+	.nav-links ul a{
+		display: block;
+	}
+	.nav-links .btn{
+		float: none;
+		margin-left: 25px;
+		margin-top: 10px;
+	}
+
+	
+}

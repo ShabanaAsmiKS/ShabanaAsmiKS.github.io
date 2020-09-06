@@ -1,0 +1,185 @@
+.vertical-bar{
+	height: 100%;
+	background: #000;
+	top: 0;
+	left: 0;
+	position: absolute;
+}
+
+<div class="vertical-bar">
+
+
+.social-icons{
+	height: 35%;
+	width: 80px;
+	background: #FFEBCD;
+	text-align: center;
+	padding-top: 27%;
+	bottom: 0;
+	position: absolute;
+}
+
+
+
+
+.social-icons{
+	width:330px;
+    	float: right;
+	background: transparent;
+	bottom: 0;
+	position: absolute;
+}
+.social-icons .fa{
+	color: #FFEBCD;
+	margin: 15px 23px;
+	display: block; 
+	padding: 8px;
+}
+
+
+
+
+.fa-bars{
+		position: absolute;
+		right: 20px;
+		top: 10px;
+	}
+	.nav-bar .fa{
+		display: block;
+		color: #800000;
+		margin: 10px 25px;
+		font-size: 22px;
+		cursor: pointer;
+	}
+	.nav-links{
+		height: 100vh;
+		width: 200px;
+		background: #000;
+		top: 0;
+		right: 0;
+		position: absolute;
+		text-align: left;
+		z-index: 2;
+	}
+	.nav-links ul a{
+		disply: block;
+	}
+
+
+
+
+
+
+<video id="video" width="200" height="100" preload="auto">
+        	<source src="TRI (online-video-cutter.com).mp4" type="video/mp4">      
+   	</video>
+
+
+var tag = document.createElement('script');
+
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+// 3. This function creates an <iframe> (and YouTube player)
+//    after the API code downloads.
+var player;
+
+function onYouTubeIframeAPIReady() {
+    player = new YT.Player('player', {
+	align: center;
+        height: '315',
+        width: '560',
+        videoId: 'l-gQLqv9f4o',
+        events: {
+            'onStateChange': onPlayerStateChange
+        }
+    });
+}
+
+
+function onPlayerStateChange(event) {
+    if (event.data == YT.PlayerState.PLAYING) {
+      //player is playing
+    } else {
+      //player is paused
+    }
+}
+
+function stopVideo() {
+    player.stopVideo();
+}
+
+function playVideo() {
+  player.playVideo();
+}
+
+function pauseVideo() {
+  player.pauseVideo();
+}
+
+
+$(document).on('opened.fndtn.reveal', '[data-reveal]', function () {
+    playVideo();
+});
+
+$(document).on('closed.fndtn.reveal', '[data-reveal]', function () {
+  pauseVideo();
+});
+
+
+
+function vidplay() { 
+		var video = document.getElementById("video"); 
+		var button = document.getElementById("play"); 
+		if (video.paused) { 
+			video.play(); 
+			button.textContent = "||";
+	 	} 
+		else 
+		{ 
+			video.pause(); 
+			button.textContent = ">"; 
+		} 
+	} 
+
+<div id="videoStory" class="mfp-hide" style="max-width: 75%; margin: 0 auto;">
+ 		<iframe width="853" height="480" src="https://www.youtube.com/watch?v=0kFOulDOfzc" frameborder="0" allowfullscreen></iframe>
+	</div>
+
+
+width="200" height="100" preload="auto"
+
+
+.quote .btn2{
+	float: center;
+}
+
+.video{
+	width: 400;
+	height: 200;	
+	preload: auto;
+	
+}
+.quote .video{
+		float: center;
+}	
+
+
+function vidplay() { 
+		var video = document.getElementById("video"); 
+		var button = document.getElementById("play"); 
+		if (video.paused) { 
+			video.play(); 
+			button.textContent = "||";
+	 	} 
+		else{
+			video.pause(); 
+			button.textContent = ">"; 
+		}
+		video.play(); 
+		button.textContent="watch video";
+	} 
+<video id="video" class="video">
+        	<source src="TRI (online-video-cutter.com).mp4" type="video/mp4">      
+   	</video>

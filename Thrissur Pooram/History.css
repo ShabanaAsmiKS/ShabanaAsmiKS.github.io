@@ -1,0 +1,21 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Arrial;
+}
+.hero{
+	height: 100vh;
+	background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(History.jpg);
+	background-position: center;
+	background-size: cover;
+	color: white;
+	overflow-x: hidden;
+	position: relative;
+}
+.nav-logo{
+	flex; 1;
+}
+.nav-logo h1{
+	color: #BC8F8F;
+	font-family: courier;
+}

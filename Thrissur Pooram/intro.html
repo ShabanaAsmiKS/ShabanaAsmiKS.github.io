@@ -1,0 +1,57 @@
+<html>
+<head>
+	<title>POORAM VIBES</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+<div class="hero">
+	<div class="nav-bar">
+		<div class="nav-logo">
+			<h1>FESTA</h1>
+		</div>
+		<div class="nav-links" id="nav-links">
+			<i class="fa fa-close" aria-hidden="true" onclick="closeMenu()"></i>
+			<ul>
+				<a href="home.html"><li>Home</li></a>
+				<a href="#"><li>About</li></a>
+				<a href="#"><li>HighLightS</li></a>
+			</ul>
+			<button type="button" class="btn">SIGN UP</button>	
+		</div>
+		<i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+	</div>
+	<div class="quote"><h1>May the warmth and splendour,<br><span> that are a part of this auspicious occassion,</span><br> fill your life with happiness and bright cheer,<br><span> and bring to you joy and prosperity,</span><br> for the whole year...</h1>
+
+		<button type="button" class="btn2">Explore</button>	
+	</div>
+		<div class="social-icons">
+			
+				<i class="fa fa-address-book" aria-hidden="true"></i>
+				<i class="fa fa-facebook-square" aria-hidden="true"></i>
+				<i class="fa fa-instagram" aria-hidden="true"></i>
+				<i class="fa fa-twitter" aria-hidden="true"></i>
+		
+		</div>
+	
+</div>
+<script type="text/javascript">
+	var show= document.getElementById("nav-links");
+	function showMenu(){
+		show.style.right="0";
+		
+	}
+	function closeMenu(){
+		show.style.right="-200px";
+		
+	}
+	
+
+
+</script>
+</body>
+</html>
